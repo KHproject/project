@@ -16,11 +16,11 @@
 <form action="signPro.dj" method="post">
 <input type="text" name="email">				<br/>
 <input type="password" name="pw">				<br/>
-<input type="submit" value="이메일로 로그인">		<br/>
+<input type="submit" value="이메일로 로그인">			<br/>
 </form>
 
 <a href="fackbookLogin.dj">페이스북으로 로그인</a>		<br/>
-<a href="singup_inputFrom.dj">DJ회원가입</a>
+<a href="signUp.dj">DJ회원가입</a>
 <a href="findpw.dj">비밀번호 찾기</a>
 
 

@@ -5,13 +5,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
-<style type="text/css" href="../style/css/herb.css"></style>
 <title>Insert title here</title>
 </head>
 <body>
 
 
-<h1> DONJOM 아아아아아아아</h1>
+<h1> DONJOM</h1>
 
 <%-- logo로고  및  top메뉴 --%>
 <img src="logo.jpg"/>

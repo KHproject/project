@@ -8,5 +8,11 @@
 </head>
 <body>
 
+<script>
+
+	window.loaction.href="signIn.dj"
+
+</script>
+
 </body>
 </html>
