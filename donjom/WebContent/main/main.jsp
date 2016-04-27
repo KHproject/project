@@ -5,26 +5,40 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<link rel="stylesheet" type="text/css" href="../style/css/herb.css">
 <title>Insert title here</title>
 </head>
 <body>
 
-
-<h1> DONJOM</h1>
+<div id="wrap">
+	<div id="header">
+		<div id="top_menu">
 
 <%-- logo로고  및  top메뉴 --%>
-<img src="logo.jpg"/>
 
-<a href="loan.dj" >DONJOM 받기</a>
-<a href="/product/fund_list.dj" >DONJOM 주기</a>
-<a href="DJlive.dj" >DONJOM 상태</a>
-<a href="/product/DJex.dj" >DONJOM 연습</a>
-<a href="DJcalculator.dj" >DONJOM 계산기</a>
+<div class="logo"><img src="logo.jpg"/></div>
+	<div class="t_menu">
+		<ul class="menu_line">
+		
+			<li><a href="loan.dj" >DONJOM 받기</a></li>
+			<li><a href="/product/fund_list.dj" >DONJOM 주기</a></li>
+			<li><a href="DJlive.dj" >DONJOM 상태</a></li>
+			<li><a href="/product/DJex.dj" >DONJOM 연습</a></li>
+			<li><a href="DJcalculator.dj" >이자 계산기</a></li>
+		
+		</ul>
 
 
 <a href="comeIn.dj">회원가입</a>
 <a href="/user/signin.dj">로그인</a>
+	</div>
+		</div>
+	
 
+
+
+
+</div>
 <%-- 중간메뉴 --%>
 
 메인문구
@@ -43,7 +57,9 @@
 <td>평균이자율(연)</td><td>누적 대출액</td><td>누적 상환액</td><td>부도율 </td>
 </tr>
 <tr>
+<%-- 
 <td>${avgiza}</td><td>${totalloan}</td><td>${totalgive}</td><td>${break}</td>
+--%>
 </tr>
 </table>
 
@@ -100,5 +116,8 @@ ${companyinformation}
 
 
 <%-- sns정보 및 사용가능한 sns --%>
+
+
+</div>
 </body>
 </html>
