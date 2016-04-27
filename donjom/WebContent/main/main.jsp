@@ -5,42 +5,50 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
-<link rel="stylesheet" type="text/css" href="../style/css/herb.css">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../style/css/herb.css" rel="stylesheet">
+<link href="../bt/css/bootstrap.min.css" rel="stylesheet">
+ <link href="../bt/css/bootstrap-theme.min.css" rel="stylesheet">
 <title>Insert title here</title>
 </head>
 <body>
 
-<div id="wrap">
-	<div id="header">
-		<div id="top_menu">
 
-<%-- logo로고  및  top메뉴 --%>
+  <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img alt="brand" src="../image/brand.png"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="loan.dj" ><b>대출JOM</b></a></li>
+			<li><a href="/product/fund_list.dj" ><b>투자JOM</b></a></li>
+			<li><a href="DJlive.dj" ><b>상태JOM</b></a></li>
+			<li><a href="/product/DJex.dj" ><b>연습JOM</b></a></li>
+			<li><a href="DJcalculator.dj" ><b>계산기JOM</b></a></li>
+        
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+           	<li><a href="comeIn.dj">회원가입</a></li>
+			<li><a href="/user/signin.dj">로그인</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
 
-<div class="logo"><img src="logo.jpg"/></div>
-	<div class="t_menu">
-		<ul class="menu_line">
-		
-			<li><a href="loan.dj" >DONJOM 받기</a></li>
-			<li><a href="/product/fund_list.dj" >DONJOM 주기</a></li>
-			<li><a href="DJlive.dj" >DONJOM 상태</a></li>
-			<li><a href="/product/DJex.dj" >DONJOM 연습</a></li>
-			<li><a href="DJcalculator.dj" >이자 계산기</a></li>
-		
-		</ul>
 
 
-<a href="comeIn.dj">회원가입</a>
-<a href="/user/signin.dj">로그인</a>
-	</div>
-		</div>
-	
-
-
-
-
-</div>
 <%-- 중간메뉴 --%>
-
+<div class="jumbotron">
+	<div id="top_menu">
 메인문구
 
 <a href="/profile/dashboard.dj" >대시보드</a>
@@ -116,8 +124,16 @@ ${companyinformation}
 
 
 <%-- sns정보 및 사용가능한 sns --%>
-
-
+	</div>
 </div>
+
+
+
+<!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
+    <script src="../bt/js/bootstrap.min.js"></script>
+      <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../bt/js/ie10-viewport-bug-workaround.js"></script>
 </body>
 </html>

@@ -10,8 +10,7 @@ width:960px; position:relative; border:1px solid}
 
 #header{widht:100%;}
 
-#top_menu{position:fixed;  width:960px; height: 50px; 
-background-color: red; z-index:1; }
+#top_menu{padding-top:70px; }
 		  
 #top_menu ul{font-size: 14px; color: #000000; font-weight: bold; }
 #top_menu li{ list-style: none; text-decoration: none;display:inline;}
