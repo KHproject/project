@@ -1,10 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="../style/css/herb.css" rel="stylesheet">
@@ -14,8 +13,7 @@
 </head>
 <body>
 
-
-  <!-- Fixed navbar -->
+   <!-- Fixed navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -49,14 +47,17 @@
 <%-- 중간메뉴 --%>
 <div class="jumbotron">
 	<div id="top_menu">
+	
 메인문구
+<ul>
+<li><a href="/profile/dashboard.dj" >대시보드</a></li>
+<li><a href="/profile/invest.history.dj" >투자내역</a></li>
+<li><a href="/profile/point.dj" >충전/환급</a></li>
+<li><a href="press.dj" >언론기사</a></li>
+<li><a href="/guide/loan.dj" >대출안내</a></li>
+<li><a href="/guide/invest.dj" >투자안내</a></li>
 
-<a href="/profile/dashboard.dj" >대시보드</a>
-<a href="/profile/invest.history.dj" >투자내역</a>
-<a href="/profile/point.dj" >충전/환급</a>
-<a href="press.dj" >언론기사</a>
-<a href="/guide/loan.dj" >대출안내</a>
-<a href="/guide/invest.dj" >투자안내</a>
+</ul>
 
 <%-- 매출및 부도 상태 --%>
 
@@ -70,6 +71,32 @@
 --%>
 </tr>
 </table>
+
+ </div>
+   </div>
+
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="../image/main-bn.jpg" alt="...">
+      <div class="caption">
+        <h3 >연습투자</h3>
+      
+        <p>'돈좀'연습 투자는 신규 가입자를 위한 체험형 투자 상품입니다. 대출기간, 연이율, 상환방식 설정을 통해</p>
+        
+        <div class="progress">
+  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+    <span class="sr-only">40% Complete (success)</span>
+  </div>
+</div>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
 <%-- 펀딩메뉴 --%>
 펀딩이 끝나지 않은 펀딩상품만 꺼내 놓기
