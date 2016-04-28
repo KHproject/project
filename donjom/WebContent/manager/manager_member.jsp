@@ -9,6 +9,8 @@
 <body>
 	<select> 
 		<option>회원이름</option>
+		<option>대출자</option>
+		<option>투자자</option>
 		<option>상환중</option>
 		<option>상환완료</option>
 		<option>연체</option>
@@ -16,6 +18,7 @@
 	</select>
 	<input type="text" align="right">
 	<input type="submit" value="검색" align="right">
+
 	<table border=1>
 		<tr>
 			<td>회원이름 </td>

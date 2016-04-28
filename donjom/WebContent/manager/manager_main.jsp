@@ -7,10 +7,10 @@
 <title>manager page</title>
 </head>
 <body>
-	<form method="post" action="manager_member.dj">
-	<input type="submit" value="회원 검색"/>
+	
+	<input type="button" value="회원 검색" onclick="javascript:location.href='manager_member.dj'">
 	<input type="button" value="카테고리 추가" onclick="javascript:location.href='manager_category.dj'">
 	<input type="button" value="대출 심사" onclick="javascript:location.href='manager_evaluation.dj'">
-	</form>
+	
 </body>
 </html>

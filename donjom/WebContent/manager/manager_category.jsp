@@ -11,5 +11,14 @@
 	<input type="text" name="category"/>
 	<input type="submit" value="카테고리 추가"/>
 	</form> 
+	
+	<br/>
+	<table border="1">
+		<tr>
+			<td>카테고리 목록</td>
+		<tr>
+			<td>부동산</td>
+		
+	</table>
 </body>
 </html>
