@@ -8,16 +8,16 @@
 </head>
 <body>
 
-<<<<<<< HEAD
+
 <div id="login">
 <div id="container">
 <form class="form-signin" action="signPro.dj" method="post">
 	<h2 class="form-signin-heading">로그인</h2>
 	<label for="inputEmail" class="sr-only">이메일 주소</label>
-	<input type="email" id="inputEmail" class="form-control" 
+	<input type="email" id="inputEmail" name="email" class="form-control" 
 	placeholder="이메일을 입력해주세요 " required autofocus>
 	<label for = "inputPassword" class="sr-only">비밀번호</label>
-	<input type="password" id="inputPassword" class="form-control" 
+	<input type="password" id="inputPassword" name="pw" class="form-control" 
 	placeholder="비밀번호를 입력해주세요" required>
 	
 	<button class="btn btn-lg btn-primary btn-block" type="submit">
@@ -29,26 +29,6 @@
 		페이스북으로 로그인
 	</button>
 	</div>
-=======
-
-<h2>로그인</h2>
-
-로그인 하시면 DJ(DONJOM)의 다양한 서비스를 이용하실 수 있습니다.	<br/>
-
-<form action="signPro.dj" method="post">
-<input type="text" name="email">				<br/>
-<input type="password" name="pw">				<br/>
-<input type="submit" value="이메일로 로그인">			<br/>
-</form>
-
-<a href="fackbookLogin.dj">페이스북으로 로그인</a>		<br/>
-<a href="signUp.dj">DJ회원가입</a>
-<a href="findpw.dj">비밀번호 찾기</a>
->>>>>>> refs/remotes/origin/master
-
-
-<<<<<<< HEAD
-
 
 <ul>
 <li><a href="signUp.dj">DJ회원가입</a></li>
@@ -65,8 +45,7 @@
     <script src="../bt/js/bootstrap.min.js"></script>
       <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../bt/js/ie10-viewport-bug-workaround.js"></script>
-=======
->>>>>>> refs/remotes/origin/master
+
 
 </body>
 </html>
