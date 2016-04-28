@@ -2,7 +2,17 @@ package sign.bean;
 
 public class memberDto {
 	
-	String email,pw,nickname;
+	String email,pw,nickname,terms;
+
+	
+	
+	public String getTerms() {
+		return terms;
+	}
+
+	public void setTerms(String terms) {
+		this.terms = terms;
+	}
 
 	public String getEmail() {
 		return email;

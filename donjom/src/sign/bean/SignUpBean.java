@@ -25,7 +25,6 @@ public class SignUpBean {
 	public ModelAndView signUpPro(memberDto dto){
 		
 		sqlMap.insert("signUp", dto);
-	
 		
 		mv.setViewName("/signup/signup_inputPro.jsp");
 		return mv;

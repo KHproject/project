@@ -5,7 +5,7 @@
 <typeAlias alias="signDto" type="sign.bean.memberDto"/>
 
 <insert id="signUp" parameterClass="signDto">
-
+ insert into member(no,nickname,email,pw,terms,join) values(MEMBER_NO.NEXTVAL,#nickname#,#email#,#pw#,#terms#,sysdate)
 </insert>
 
 </sqlMap>
