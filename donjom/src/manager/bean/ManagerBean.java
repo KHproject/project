@@ -26,5 +26,11 @@ public class ManagerBean {
 		mv.setViewName("/manager/manager_member.jsp");
 		return mv;
 	}
+	@RequestMapping("/manager_category.dj")
+	public ModelAndView managercategory(){
+		
+		mv.setViewName("/manager/manager_category.jsp");
+		return mv;
+	}
 
 }

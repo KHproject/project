@@ -4,13 +4,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
-<title>manager page</title>
+<title>category page</title>
 </head>
 <body>
-	<form method="post" action="manager_member.dj">
-	<input type="submit" value="회원 검색"/>
-	<input type="button" value="카테고리 추가" onclick="javascript:location.href='manager_category.dj'">
-	<input type="button" value="대출 심사" onclick="window.location.href=">
-	</form>
+	<form action="">
+	<input type="text" name="category"/>
+	<input type="submit" value="카테고리 추가"/>
+	</form> 
 </body>
 </html>
