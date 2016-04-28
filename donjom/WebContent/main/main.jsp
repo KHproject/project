@@ -9,7 +9,7 @@
 <link href="../style/css/herb.css" rel="stylesheet">
 <link href="../bt/css/bootstrap.min.css" rel="stylesheet">
  <link href="../bt/css/bootstrap-theme.min.css" rel="stylesheet">
-<title>Insert title here</title>
+<title>main page</title>
 </head>
 <body>
 
@@ -36,7 +36,7 @@
           </ul>
           <ul class="nav navbar-nav navbar-right">
            	<li><a href="comeIn.dj">회원가입</a></li>
-			<li><a href="/user/signin.dj">로그인</a></li>
+			<li><a href="signIn.dj">로그인</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
