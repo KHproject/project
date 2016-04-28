@@ -4,16 +4,11 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
-<link rel="stylesheet" type="text/css" href="../style/css/herb.css">
-<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="../bt/css/bootstrap.min.css" rel="stylesheet">
- <link href="../bt/css/bootstrap-theme.min.css" rel="stylesheet">
 <title>Insert title here</title>
 </head>
 <body>
 
+<<<<<<< HEAD
 <div id="login">
 <div id="container">
 <form class="form-signin" action="signPro.dj" method="post">
@@ -34,8 +29,25 @@
 		페이스북으로 로그인
 	</button>
 	</div>
+=======
+
+<h2>로그인</h2>
+
+로그인 하시면 DJ(DONJOM)의 다양한 서비스를 이용하실 수 있습니다.	<br/>
+
+<form action="signPro.dj" method="post">
+<input type="text" name="email">				<br/>
+<input type="password" name="pw">				<br/>
+<input type="submit" value="이메일로 로그인">			<br/>
+</form>
+
+<a href="fackbookLogin.dj">페이스북으로 로그인</a>		<br/>
+<a href="signUp.dj">DJ회원가입</a>
+<a href="findpw.dj">비밀번호 찾기</a>
+>>>>>>> refs/remotes/origin/master
 
 
+<<<<<<< HEAD
 
 
 <ul>
@@ -53,6 +65,8 @@
     <script src="../bt/js/bootstrap.min.js"></script>
       <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../bt/js/ie10-viewport-bug-workaround.js"></script>
+=======
+>>>>>>> refs/remotes/origin/master
 
 </body>
 </html>

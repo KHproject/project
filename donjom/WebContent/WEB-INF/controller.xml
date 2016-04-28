@@ -33,8 +33,8 @@
 		destroy-method="close"
 		p:driverClassName="oracle.jdbc.driver.OracleDriver"
 		p:url="jdbc:oracle:thin:@khmaster.iptime.org:7000:orcl"
-		p:username="java17"
-		p:password="java17"
+		p:username="donjom"
+		p:password="donjom"
 		/>
 	
 </beans>
