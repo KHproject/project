@@ -7,7 +7,7 @@
 <title>category page</title>
 </head>
 <body>
-	<form action="">
+	<form method="post" action="manager_category.dj">
 	<input type="text" name="category"/>
 	<input type="submit" value="카테고리 추가"/>
 	</form> 
