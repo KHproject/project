@@ -30,5 +30,14 @@ public class SignUpBean {
 		return mv;
 	}
 	
+	@RequestMapping()
+	public ModelAndView singUpModifyPro(){
+		
+		
+		mv.setViewName("/signup/signup_modifyPro.jsp");
+		return mv;
+	}
+	
+	
 	
 }	
