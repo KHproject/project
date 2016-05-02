@@ -3,16 +3,15 @@
 
 <html>
 <head>
-<<<<<<< HEAD
-<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
-=======
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="style/css/herb.css" rel="stylesheet">
-<link href="bt/css/bootstrap.min.css" rel="stylesheet">
- <link href="bt/css/bootstrap-theme.min.css" rel="stylesheet">
->>>>>>> refs/remotes/origin/test
-<title>Insert title here</title>
+	<link href="bt/css/bootstrap.min.css" rel="stylesheet">
+ 	<link href="bt/css/bootstrap-theme.min.css" rel="stylesheet">
+
+<title>LOGIN</title>
 </head>
 <body>
 
@@ -52,12 +51,12 @@
     <!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
     <script src="bt/js/bootstrap.min.js"></script>
       <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<<<<<<< HEAD
-    <script src="../bt/js/ie10-viewport-bug-workaround.js"></script>
 
-=======
     <script src="bt/js/ie10-viewport-bug-workaround.js"></script>
->>>>>>> refs/remotes/origin/test
+
+
+    <script src="bt/js/ie10-viewport-bug-workaround.js"></script>
+
 
 </body>
 </html>
