@@ -1,5 +1,9 @@
 package manager.bean;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import org.apache.struts2.views.xslt.ArrayAdapter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.orm.ibatis.SqlMapClientTemplate;
 import org.springframework.stereotype.Controller;
@@ -22,7 +26,14 @@ public class ManagerBean {
 	}
 	@RequestMapping("/manager_member.dj")
 	public ModelAndView managermember(){
+		List list1 = new ArrayList();
+		List list2 =new ArrayList();
+		ModelAndView mv = new ModelAndView();
 		
+		list1 = sqlMap.queryForList("m_member", null);
+		list2 = sqlMap.queryForList("m_memberInfo", null);
+		mv.addObject("list1",list1);
+		mv.addObject("list2",list2);
 		
 		mv.setViewName("/manager/manager_member.jsp");
 		return mv;
