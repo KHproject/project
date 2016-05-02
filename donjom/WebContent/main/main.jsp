@@ -5,15 +5,21 @@
 <html>
 <head>
 
+
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="style/css/herb.css" rel="stylesheet">
 <link href="bt/css/bootstrap.min.css" rel="stylesheet">
  <link href="bt/css/bootstrap-theme.min.css" rel="stylesheet">
 <title>main page</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<title>Insert title here</title>
+
 </head>
 <body>
 
+<<<<<<< HEAD
    <!-- Fixed navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
@@ -42,10 +48,27 @@
         </div><!--/.nav-collapse -->
       </div>
     </nav>
+=======
 
+<h1> DONJOM</h1>
 
+<%-- logo로고  및  top메뉴 --%>
+<img src="logo.jpg"/>
+
+<a href="loan.dj" >DONJOM 받기</a>
+<a href="/product/fund_list.dj" >DONJOM 주기</a>
+<a href="DJlive.dj" >DONJOM 상태</a>
+<a href="/product/DJex.dj" >DONJOM 연습</a>
+<a href="DJcalculator.dj" >DONJOM 계산기</a>
+>>>>>>> refs/remotes/origin/master
+ 
+
+<a href="comeIn.dj">회원가입</a>
+<a href="/user/signin.dj">로그인</a>
 
 <%-- 중간메뉴 --%>
+<<<<<<< HEAD
+=======
 
 <div class="jumbotron">
 <div id="header">
@@ -59,10 +82,20 @@
 <li><a href="press.dj" >언론기사</a></li>
 <li><a href="/guide/loan.dj" >대출안내</a></li>
 <li><a href="/guide/invest.dj" >투자안내</a></li>
+>>>>>>> refs/remotes/origin/test
 
-</ul>
+메인문구
+
+<a href="/profile/dashboard.dj" >대시보드</a>
+<a href="/profile/invest.history.dj" >투자내역</a>
+<a href="/profile/point.dj" >충전/환급</a>
+<a href="press.dj" >언론기사</a>
+<a href="/guide/loan.dj" >대출안내</a>
+<a href="/guide/invest.dj" >투자안내</a>
 
 <%-- 매출및 부도 상태 --%>
+<<<<<<< HEAD
+=======
 
 <table>
 <tr>
@@ -98,6 +131,7 @@
     </div>
   </div>
 </div>
+>>>>>>> refs/remotes/origin/test
 
 
 
@@ -154,6 +188,8 @@ ${companyinformation}
 
 
 <%-- sns정보 및 사용가능한 sns --%>
+<<<<<<< HEAD
+=======
 	</div>
 
 
@@ -164,5 +200,6 @@ ${companyinformation}
     <script src="bt/js/bootstrap.min.js"></script>
       <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="bt/js/ie10-viewport-bug-workaround.js"></script>
+>>>>>>> refs/remotes/origin/test
 </body>
 </html>
