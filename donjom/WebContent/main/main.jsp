@@ -1,25 +1,20 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 
-
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+ 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="style/css/herb.css" rel="stylesheet">
-<link href="bt/css/bootstrap.min.css" rel="stylesheet">
- <link href="bt/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="style/css/herb.css" rel="stylesheet">
+	<link href="bt/css/bootstrap.min.css" rel="stylesheet">
+ 	<link href="bt/css/bootstrap-theme.min.css" rel="stylesheet">
 <title>main page</title>
-
-<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
-<title>Insert title here</title>
 
 </head>
 <body>
 
-<<<<<<< HEAD
    <!-- Fixed navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
@@ -48,7 +43,8 @@
         </div><!--/.nav-collapse -->
       </div>
     </nav>
-=======
+
+
 
 <h1> DONJOM</h1>
 
@@ -60,20 +56,15 @@
 <a href="DJlive.dj" >DONJOM 상태</a>
 <a href="/product/DJex.dj" >DONJOM 연습</a>
 <a href="DJcalculator.dj" >DONJOM 계산기</a>
->>>>>>> refs/remotes/origin/master
+
  
 
 <a href="comeIn.dj">회원가입</a>
 <a href="/user/signin.dj">로그인</a>
 
 <%-- 중간메뉴 --%>
-<<<<<<< HEAD
-=======
 
-<div class="jumbotron">
-<div id="header">
-	<div id="top_menu">
-	
+
 메인문구
 <ul>
 <li><a href="/profile/dashboard.dj" >대시보드</a></li>
@@ -82,7 +73,7 @@
 <li><a href="press.dj" >언론기사</a></li>
 <li><a href="/guide/loan.dj" >대출안내</a></li>
 <li><a href="/guide/invest.dj" >투자안내</a></li>
->>>>>>> refs/remotes/origin/test
+
 
 메인문구
 
@@ -93,9 +84,7 @@
 <a href="/guide/loan.dj" >대출안내</a>
 <a href="/guide/invest.dj" >투자안내</a>
 
-<%-- 매출및 부도 상태 --%>
-<<<<<<< HEAD
-=======
+
 
 <table>
 <tr>
@@ -131,7 +120,7 @@
     </div>
   </div>
 </div>
->>>>>>> refs/remotes/origin/test
+
 
 
 
@@ -188,8 +177,7 @@ ${companyinformation}
 
 
 <%-- sns정보 및 사용가능한 sns --%>
-<<<<<<< HEAD
-=======
+
 	</div>
 
 
@@ -200,6 +188,6 @@ ${companyinformation}
     <script src="bt/js/bootstrap.min.js"></script>
       <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="bt/js/ie10-viewport-bug-workaround.js"></script>
->>>>>>> refs/remotes/origin/test
+
 </body>
 </html>
