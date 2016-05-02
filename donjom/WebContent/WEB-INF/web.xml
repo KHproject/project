@@ -36,4 +36,6 @@
 		<servlet-name>spring</servlet-name>
 		<url-pattern>*.dj</url-pattern>
 	</servlet-mapping>
+	
+	
 </web-app>

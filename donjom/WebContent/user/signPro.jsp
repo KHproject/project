@@ -10,7 +10,7 @@
 <body>
 
 <script>
-	window.location.href="main.dj";
+	window.location="main.dj";
 </script>
 
 </body>

@@ -3,18 +3,36 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
+<<<<<<< HEAD
+
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+=======
 
 	<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+>>>>>>> branch 'test' of https://github.com/KHproject/project.git
     <meta name="viewport" content="width=device-width, initial-scale=1">
+<<<<<<< HEAD
+<link href="../style/css/herb.css" rel="stylesheet">
+<link href="../bt/css/bootstrap.min.css" rel="stylesheet">
+ <link href="../bt/css/bootstrap-theme.min.css" rel="stylesheet">
+=======
 	<link href="style/css/herb.css" rel="stylesheet">
 	<link href="bt/css/bootstrap.min.css" rel="stylesheet">
  	<link href="bt/css/bootstrap-theme.min.css" rel="stylesheet">
+>>>>>>> branch 'test' of https://github.com/KHproject/project.git
 <title>main page</title>
+<<<<<<< HEAD
+=======
 
+>>>>>>> branch 'test' of https://github.com/KHproject/project.git
 </head>
 <body>
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> branch 'test' of https://github.com/KHproject/project.git
    <!-- Fixed navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
@@ -25,7 +43,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#"><img alt="brand" src="image/brand.png"></a>
+          <a class="navbar-brand" href="#"><img alt="brand" src="../image/brand.png"></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -37,13 +55,37 @@
         
           </ul>
           <ul class="nav navbar-nav navbar-right">
+<<<<<<< HEAD
+           	<li><a href="signUp.dj">회원가입</a></li>
+			<li>
+			<c:if test="${sessionScope.memId == null}">
+			<a href="signIn.dj">로그인</a>
+			</c:if>
+			<c:if test="${sessionScope.memId != null}">
+				<ul>
+				<li>내정보</li>	
+				<li><a href="dashboard.dj">대시보드</a></li>
+				<li><a href="invest_history.dj">투자내역</a></li>
+				<li><a href="laon_history.dj">대출내역</a></li>
+				<li><a href="point.dj">충전/환급</a></li>
+				<li><a href="notification.dj">알림메세지</a></li>
+				<li><a href="setting.dj">설정</a></li>
+				<li><a href="helf.dj">도움말</a></li>	
+				<li><a href="logout.dj">로그아웃</a></li>			
+				</ul>
+			</c:if>
+			</li>
+=======
            	<li><a href="comeIn.dj">회원가입</a></li>
 			<li><a href="signIn.dj">로그인</a></li>
+>>>>>>> refs/remotes/origin/master
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 
+<<<<<<< HEAD
+=======
 
 
 <h1> DONJOM</h1>
@@ -58,13 +100,18 @@
 <a href="DJcalculator.dj" >DONJOM 계산기</a>
 
  
+>>>>>>> branch 'test' of https://github.com/KHproject/project.git
 
-<a href="comeIn.dj">회원가입</a>
-<a href="/user/signin.dj">로그인</a>
 
 <%-- 중간메뉴 --%>
+<<<<<<< HEAD
+<div class="jumbotron">
+	<div id="top_menu">
+	
+=======
 
 
+>>>>>>> branch 'test' of https://github.com/KHproject/project.git
 메인문구
 <ul>
 <li><a href="/profile/dashboard.dj" >대시보드</a></li>
@@ -73,16 +120,12 @@
 <li><a href="press.dj" >언론기사</a></li>
 <li><a href="/guide/loan.dj" >대출안내</a></li>
 <li><a href="/guide/invest.dj" >투자안내</a></li>
+<<<<<<< HEAD
+=======
 
+>>>>>>> branch 'test' of https://github.com/KHproject/project.git
 
-메인문구
-
-<a href="/profile/dashboard.dj" >대시보드</a>
-<a href="/profile/invest.history.dj" >투자내역</a>
-<a href="/profile/point.dj" >충전/환급</a>
-<a href="press.dj" >언론기사</a>
-<a href="/guide/loan.dj" >대출안내</a>
-<a href="/guide/invest.dj" >투자안내</a>
+</ul>
 
 
 
@@ -103,7 +146,7 @@
 <div class="row">
   <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
-      <img src="image/main-bn.jpg" alt="...">
+      <img src="../image/main-bn.jpg" alt="...">
       <div class="caption">
         <h3 >연습투자</h3>
       
@@ -177,17 +220,25 @@ ${companyinformation}
 
 
 <%-- sns정보 및 사용가능한 sns --%>
+<<<<<<< HEAD
+=======
 
+>>>>>>> branch 'test' of https://github.com/KHproject/project.git
 	</div>
+</div>
 
 
 
 <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
-    <script src="bt/js/bootstrap.min.js"></script>
+    <script src="../bt/js/bootstrap.min.js"></script>
       <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<<<<<<< HEAD
+    <script src="../bt/js/ie10-viewport-bug-workaround.js"></script>
+=======
     <script src="bt/js/ie10-viewport-bug-workaround.js"></script>
 
+>>>>>>> branch 'test' of https://github.com/KHproject/project.git
 </body>
 </html>
