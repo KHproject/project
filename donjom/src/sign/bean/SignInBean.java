@@ -20,7 +20,6 @@ public class SignInBean {
 	@RequestMapping("/signIn.dj")
 	public ModelAndView signIn(){
 		
-		System.out.println("·Î±×ÀÎ");
 		mv.setViewName("/user/signIn.jsp");
 		return mv;
 	}

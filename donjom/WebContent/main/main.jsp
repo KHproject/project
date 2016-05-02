@@ -71,8 +71,7 @@
 <a href="DJlive.dj" >DONJOM 상태</a>
 <a href="/product/DJex.dj" >DONJOM 연습</a>
 <a href="DJcalculator.dj" >DONJOM 계산기</a>
->>>>>>> refs/remotes/origin/master
-=======
+
    <!-- Fixed navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
@@ -101,7 +100,6 @@
         </div><!--/.nav-collapse -->
       </div>
     </nav>
->>>>>>> branch 'master' of https://github.com/KHproject/project.git
 
 
 
