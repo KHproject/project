@@ -49,7 +49,7 @@ public class ManagerBean {
 		
 		mv.setViewName("/manager/manager_refund.jsp");
 		return mv;
-	
+	    
 	}
 
 }
