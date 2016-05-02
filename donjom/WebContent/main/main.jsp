@@ -36,6 +36,7 @@
         
           </ul>
           <ul class="nav navbar-nav navbar-right">
+<<<<<<< HEAD
            	<li><a href="signUp.dj">회원가입</a></li>
 			<li>
 			<c:if test="${sessionScope.memId == null}">
@@ -55,6 +56,10 @@
 				</ul>
 			</c:if>
 			</li>
+=======
+           	<li><a href="comeIn.dj">회원가입</a></li>
+			<li><a href="signIn.dj">로그인</a></li>
+>>>>>>> refs/remotes/origin/master
           </ul>
         </div><!--/.nav-collapse -->
       </div>

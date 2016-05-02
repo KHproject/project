@@ -52,6 +52,7 @@ public class SignInBean {
 	
 		int check = (Integer)sqlMap.queryForObject("signcheck", dto);
 		
+<<<<<<< HEAD
 		DocumentBuilderFactory fatory = DocumentBuilderFactory.newInstance();
 		DocumentBuilder builder = fatory.newDocumentBuilder();
 		
@@ -74,6 +75,9 @@ public class SignInBean {
 		String email = dto.getEmail();
 		int no = (Integer)sqlMap.queryForObject("getno", email);
 		sedto.setNo(no);
+=======
+		System.out.println("login = "+check);
+>>>>>>> refs/remotes/origin/master
 		
 		if(check == 1){
 			

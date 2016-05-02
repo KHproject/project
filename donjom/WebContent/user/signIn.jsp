@@ -16,16 +16,27 @@
 <body>
 
 <div id="login">
+<<<<<<< HEAD
 <c:if test="${sessionScope.memId == null}">
 
+=======
+>>>>>>> refs/remotes/origin/master
 <div id="container">
 <form class="form-signin" action="signPro.dj" method="post">
 	<h2 class="form-signin-heading">로그인</h2>
 	<label for="inputEmail" class="sr-only">이메일 주소</label>
+<<<<<<< HEAD
 	<input type="text" id="inputEmail" class="form-control" name="email"
+=======
+	<input type="email" id="inputEmail" class="form-control" 
+>>>>>>> refs/remotes/origin/master
 	placeholder="이메일을 입력해주세요 " required autofocus>
 	<label for = "inputPassword" class="sr-only">비밀번호</label>
+<<<<<<< HEAD
 	<input type="password" id="inputPassword" name="pw" class="form-control" 
+=======
+	<input type="password" id="inputPassword" class="form-control" 
+>>>>>>> refs/remotes/origin/master
 	placeholder="비밀번호를 입력해주세요" required>
 	
 	<button class="btn btn-lg btn-primary btn-block" type="submit">
@@ -44,10 +55,13 @@
 </c:if>
 <c:if test="${sessionScope.memId != null}">
 
+<<<<<<< HEAD
 ${sessionScope.memId}님 DJ에 오신것을 환영합니다.
 <a href="logout.dj">로그아웃</a>
 <a href="main.dj">메인으로</a>
 </c:if>
+=======
+>>>>>>> refs/remotes/origin/master
 
 </div>
 

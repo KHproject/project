@@ -3,6 +3,7 @@ package sign.bean;
 
 public class memberDto {
 	
+<<<<<<< HEAD
 	private String email,pw,nickname,terms,snsreceive,emailreceive,join;
 	private Object profile; 
 	
@@ -21,6 +22,18 @@ public class memberDto {
 
 	public void setJoin(String join) {
 		this.join = join;
+=======
+	String email,pw,nickname,terms,profile,snsreceive,emailreceive;
+
+	
+	
+	public String getProfile() {
+		return profile;
+	}
+
+	public void setProfile(String profile) {
+		this.profile = profile;
+>>>>>>> refs/remotes/origin/master
 	}
 
 	public String getSnsreceive() {
