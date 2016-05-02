@@ -15,6 +15,7 @@ public class MainBean {
 	private ModelAndView mv;
 	
 	
+	
 	@RequestMapping("/main.dj")
 	public ModelAndView main(){
 		
