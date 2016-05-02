@@ -6,6 +6,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
 <title>manager page</title>
+
+	<input type="button" value="인증회원" onclick="javascript:location.href='manager_confirm.dj'">
+	<input type="button" value="일반회원" onclick="javascript:location.href='manager_noconfirm.dj'">
+	
+
 </head>
 <body>
 </body>
