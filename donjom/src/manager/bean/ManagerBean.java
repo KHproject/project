@@ -33,16 +33,23 @@ public class ManagerBean {
 		return mv;
 	}
 	@RequestMapping("/manager_evaluation.dj")
-	public ModelAndView managerevaluation(){
+	public ModelAndView evaluation(){
 		
 		mv.setViewName("/manager/manager_evaluation.jsp");
 		return mv;
 	}
 	@RequestMapping("/manager_repay.dj")
-	public ModelAndView managerrepay(){
+	public ModelAndView repay(){
 		
-		mv.setViewName("/manager/manager_repay");
+		mv.setViewName("/manager/manager_repay.jsp");
 		return mv;
+	}
+	@RequestMapping("/manager_refund.dj")
+	public ModelAndView refund(){
+		
+		mv.setViewName("/manager/manager_refund.jsp");
+		return mv;
+	
 	}
 
 }
