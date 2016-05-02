@@ -38,6 +38,13 @@ public class ManagerBean {
 		mv.setViewName("/manager/manager_member.jsp");
 		return mv;
 	}
+	
+	@RequestMapping("/manager_confirm.dj")
+	public ModelAndView managerconfirm(){
+		
+		mv.setViewName("/manager/manager_confirm.jsp");
+		return mv;
+	}
 	@RequestMapping("/manager_page.dj")
 	public ModelAndView managercategory(){
 		
