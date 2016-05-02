@@ -8,6 +8,5 @@
 <title>manager page</title>
 </head>
 <body>
-	
 </body>
 </html>
