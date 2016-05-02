@@ -1,115 +1,145 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
-    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
 <html>
 <head>
-<<<<<<< HEAD
-<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
-<link rel="stylesheet" type="text/css" href="../style/css/herb.css">
-<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
-=======
 
 	<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
->>>>>>> branch 'test' of https://github.com/KHproject/project.git
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<<<<<<< HEAD
-<link href="../bt/css/bootstrap.min.css" rel="stylesheet">
- <link href="../bt/css/bootstrap-theme.min.css" rel="stylesheet">
-<title>Insert title here</title>
-=======
     <link href="style/css/herb.css" rel="stylesheet">
 	<link href="bt/css/bootstrap.min.css" rel="stylesheet">
  	<link href="bt/css/bootstrap-theme.min.css" rel="stylesheet">
 
 <title>LOGIN</title>
->>>>>>> branch 'test' of https://github.com/KHproject/project.git
 </head>
 <body>
+   <div id="fb-root"></div>
+        <script>
+          window.fbAsyncInit = function() {
+            FB.init({
+              appId      : '1206601269351179', // ì•± ID
+              status     : true,          // ë¡œê·¸ì¸ ìƒíƒœë¥¼ í™•ì¸
+              cookie     : true,          // ì¿ í‚¤í—ˆìš©
+              xfbml      : true           // parse XFBML
+            });
+           
+            FB.getLoginStatus(function(response) {
+                if (response.status === 'connected') {
+                    
+                    FB.api('/me', function(user) {
+                        if (user) {
+                            var image = document.getElementById('image');
+                            image.src = 'http://graph.facebook.com/' + user.id + '/picture';
+                            var name = document.getElementById('name');
+                            name.innerHTML = user.name
+                            var id = document.getElementById('id');
+                            id.innerHTML = user.id
+                            var email = document.getElementById('email');
+                            email.innerHTML = user.email
+                        }
+                    });    
+                     
+                } else if (response.status === 'not_authorized') {
 
-<<<<<<< HEAD
-=======
+                } else {
+                    
+                }
+            });
 
->>>>>>> branch 'test' of https://github.com/KHproject/project.git
+            FB.Event.subscribe('auth.login', function(response) {
+                document.location.reload();
+            });
+            
+          };
+        
+          // Load the SDK Asynchronously
+          (function(d){
+             var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+             if (d.getElementById(id)) {return;}
+             js = d.createElement('script'); js.id = id; js.async = true;
+             js.src = "//connect.facebook.net/ko_KR/all.js";
+             ref.parentNode.insertBefore(js, ref);
+           }(document));
+          
+          function facebooklogin(){
+        	  FB.login(function(response) {  
+        		    var fbname;  
+        		    var accessToken = response.authResponse.accessToken;  
+        		    FB.api('/me', function(user) {  
+        		      fbname = user.name;
+        		      $.post("main.dj", { "userid": user.id, "email":user.email, "username": fbname, "fbaccesstoken":accessToken},  
+        		      function (responsephp) {  
+        		        if(responsephp=="N"){
+        		         location.replace('/unmember/memberrege?flag=1');            
+        		        }else{
+        		         location.replace('/');            
+        		        }
+        		      });      
+        		    });   
+        		  }, {scope: "user_about_me,publish_stream,read_friendlists,offline_access,email,user_birthday"});  
+        		}  
+        </script>
+
+
 <div id="login">
-<<<<<<< HEAD
-<c:if test="${sessionScope.memId == null}">
-
-=======
->>>>>>> refs/remotes/origin/master
 <div id="container">
 <form class="form-signin" action="signPro.dj" method="post">
-	<h2 class="form-signin-heading">·Î±×ÀÎ</h2>
-	<label for="inputEmail" class="sr-only">ÀÌ¸ŞÀÏ ÁÖ¼Ò</label>
-<<<<<<< HEAD
-<<<<<<< HEAD
-	<input type="text" id="inputEmail" class="form-control" name="email"
-=======
-	<input type="email" id="inputEmail" class="form-control" 
->>>>>>> refs/remotes/origin/master
-=======
+	<h2 class="form-signin-heading">ë¡œê·¸ì¸</h2>
+	<label for="inputEmail" class="sr-only">ì´ë©”ì¼ ì£¼ì†Œ</label>
 	<input type="email" id="inputEmail" name="email" class="form-control" 
->>>>>>> branch 'test' of https://github.com/KHproject/project.git
-	placeholder="ÀÌ¸ŞÀÏÀ» ÀÔ·ÂÇØÁÖ¼¼¿ä " required autofocus>
-	<label for = "inputPassword" class="sr-only">ºñ¹Ğ¹øÈ£</label>
-<<<<<<< HEAD
-<<<<<<< HEAD
+	placeholder="ì´ë©”ì¼ì„ ì…ë ¥í•´ì£¼ì„¸ìš” " required autofocus>
+	<label for = "inputPassword" class="sr-only">ë¹„ë°€ë²ˆí˜¸</label>
 	<input type="password" id="inputPassword" name="pw" class="form-control" 
-=======
-	<input type="password" id="inputPassword" class="form-control" 
->>>>>>> refs/remotes/origin/master
-=======
-	<input type="password" id="inputPassword" name="pw" class="form-control" 
->>>>>>> branch 'test' of https://github.com/KHproject/project.git
-	placeholder="ºñ¹Ğ¹øÈ£¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä" required>
+	placeholder="ë¹„ë°€ë²ˆí˜¸ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”" required>
 	
 	<button class="btn btn-lg btn-primary btn-block" type="submit">
-		<span class="glyphicon glyphicon-envelope">ÀÌ¸ŞÀÏ·Î ·Î±×ÀÎ</span>
+		<span class="glyphicon glyphicon-envelope">ì´ë©”ì¼ë¡œ ë¡œê·¸ì¸</span>
 	</button>
 	
 	</form>
-	<button class="btn btn-lg btn-primary btn-block" type="button">
-		ÆäÀÌ½ººÏÀ¸·Î ·Î±×ÀÎ
-	</button>
+	<a href="#" onclick="FB.login();">
+	<button class="btn btn-lg btn-primary btn-block" type="button" >
+		í˜ì´ìŠ¤ë¶ìœ¼ë¡œ ë¡œê·¸ì¸
+	</button></a>
+	
+	<a href="#" onclick="FB.logout();">
+	ë¡œê·¸ì•„ì›ƒ
+	</a>
+	
 	</div>
-<<<<<<< HEAD
-=======
+	
+	
+	<p>ì‚¬ìš©ìì •ë³´ ì¶œë ¥</p>
+<div align="left">
+    <img id="image"/>
+    <div id="name"></div>
+    <div id="id"></div>
+    <div id="email"></div>
+</div>
+<fb:login-button show-faces="false" width="200" max-rows="1"></fb:login-button>
 
->>>>>>> branch 'test' of https://github.com/KHproject/project.git
+
 <ul>
-<li><a href="signUp.dj">DJÈ¸¿ø°¡ÀÔ</a></li>
-<li><a href="findpw.dj">ºñ¹Ğ¹øÈ£ Ã£±â</a></li>
-</ul>
-</c:if>
-<c:if test="${sessionScope.memId != null}">
+<li><a href="signUp.dj">DJíšŒì›ê°€ì…</a></li>
+<li><a href="findpw.dj">ë¹„ë°€ë²ˆí˜¸ ì°¾ê¸°</a></li>
 
-<<<<<<< HEAD
-${sessionScope.memId}´Ô DJ¿¡ ¿À½Å°ÍÀ» È¯¿µÇÕ´Ï´Ù.
-<a href="logout.dj">·Î±×¾Æ¿ô</a>
-<a href="main.dj">¸ŞÀÎÀ¸·Î</a>
-</c:if>
-=======
->>>>>>> refs/remotes/origin/master
+</ul>
+
 
 </div>
 
-<!-- jQuery (ºÎÆ®½ºÆ®·¦ÀÇ ÀÚ¹Ù½ºÅ©¸³Æ® ÇÃ·¯±×ÀÎÀ» À§ÇØ ÇÊ¿äÇÕ´Ï´Ù) -->
+<!-- jQuery (ë¶€íŠ¸ìŠ¤íŠ¸ë©ì˜ ìë°”ìŠ¤í¬ë¦½íŠ¸ í”ŒëŸ¬ê·¸ì¸ì„ ìœ„í•´ í•„ìš”í•©ë‹ˆë‹¤) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <!-- ¸ğµç ÄÄÆÄÀÏµÈ ÇÃ·¯±×ÀÎÀ» Æ÷ÇÔÇÕ´Ï´Ù (¾Æ·¡), ¿øÇÏÁö ¾Ê´Â´Ù¸é ÇÊ¿äÇÑ °¢°¢ÀÇ ÆÄÀÏÀ» Æ÷ÇÔÇÏ¼¼¿ä -->
-    <script src="../bt/js/bootstrap.min.js"></script>
+    <!-- ëª¨ë“  ì»´íŒŒì¼ëœ í”ŒëŸ¬ê·¸ì¸ì„ í¬í•¨í•©ë‹ˆë‹¤ (ì•„ë˜), ì›í•˜ì§€ ì•ŠëŠ”ë‹¤ë©´ í•„ìš”í•œ ê°ê°ì˜ íŒŒì¼ì„ í¬í•¨í•˜ì„¸ìš” -->
+    <script src="bt/js/bootstrap.min.js"></script>
       <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<<<<<<< HEAD
-    <script src="../bt/js/ie10-viewport-bug-workaround.js"></script>
-=======
 
     <script src="bt/js/ie10-viewport-bug-workaround.js"></script>
 
 
     <script src="bt/js/ie10-viewport-bug-workaround.js"></script>
 
->>>>>>> branch 'test' of https://github.com/KHproject/project.git
 
 </body>
 </html>
