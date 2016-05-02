@@ -4,7 +4,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<<<<<<< HEAD
+
 
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,10 +12,10 @@
 <link href="../bt/css/bootstrap.min.css" rel="stylesheet">
  <link href="../bt/css/bootstrap-theme.min.css" rel="stylesheet">
 <title>main page</title>
-=======
+
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
 <title>Insert title here</title>
->>>>>>> refs/remotes/origin/master
+
 </head>
 <body>
 
@@ -61,7 +61,7 @@
 <a href="/product/DJex.dj" >DONJOM 연습</a>
 <a href="DJcalculator.dj" >DONJOM 계산기</a>
 >>>>>>> refs/remotes/origin/master
-
+ 
 
 <a href="comeIn.dj">회원가입</a>
 <a href="/user/signin.dj">로그인</a>
@@ -79,14 +79,7 @@
 
 <%-- 매출및 부도 상태 --%>
 
-<table>
-<tr>
-<td>평균이자율(연)</td><td>누적 대출액</td><td>누적 상환액</td><td>부도율 </td>
-</tr>
-<tr>
-<td>${avgiza}</td><td>${totalloan}</td><td>${totalgive}</td><td>${break}</td>
-</tr>
-</table>
+
 
 <%-- 펀딩메뉴 --%>
 펀딩이 끝나지 않은 펀딩상품만 꺼내 놓기
