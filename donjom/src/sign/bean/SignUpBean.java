@@ -15,7 +15,8 @@ public class SignUpBean {
 	private ModelAndView mv;
 	
 	@RequestMapping("/signUp.dj")
-	public ModelAndView signUpFrom(){
+	public ModelAndView signUpForm(){
+		
 		
 		mv.setViewName("/signup/signup_inputForm.jsp");
 		return mv;
@@ -29,6 +30,5 @@ public class SignUpBean {
 		mv.setViewName("/signup/signup_inputPro.jsp");
 		return mv;
 	}
-	
-	
-}	
+
+}
