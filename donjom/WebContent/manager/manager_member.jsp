@@ -9,8 +9,8 @@
 <body>
 	<select> 
 		<option>회원이름</option>
-		<option>대출자</option>
-		<option>투자자</option>
+		<option>인증회원/일반회원</option>
+		<option>상품코드</option>
 		<option>상환중</option>
 		<option>상환완료</option>
 		<option>연체</option>

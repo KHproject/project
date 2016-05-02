@@ -1,6 +1,7 @@
 @CHARSET "EUC-KR";
 
 <<<<<<< HEAD
+=======
 
  body{margin:0; padding:0;}
  img{border:0;}
@@ -17,5 +18,9 @@
  #top_menu li{ list-style: none; text-decoration: none;display:inline;}
  .logo {float: left; padding-left: 40px;}
  .menu_line{float:left; padding-left: 50px;}
+<<<<<<< HEAD
 =======
 >>>>>>> refs/remotes/origin/master
+=======
+>>>>>>> refs/remotes/origin/test
+>>>>>>> branch 'test' of https://github.com/KHproject/project.git

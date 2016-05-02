@@ -8,9 +8,10 @@
 </head>
 <body>
 	
-	<input type="button" value="회원 검색" onclick="javascript:location.href='manager_member.dj'">
-	<input type="button" value="카테고리 추가" onclick="javascript:location.href='manager_category.dj'">
-	<input type="button" value="대출 심사" onclick="javascript:location.href='manager_evaluation.dj'">
-	
+	<input type="button" value="회원 정보관리" onclick="javascript:location.href='manager_member.dj'">
+	<input type="button" value="페이지 관리" onclick="javascript:location.href='manager_page.dj'">
+	<input type="button" value="게시물 관리" onclick="javascript:location.href='manager_board.dj'">
+	<input type="button" value="투자 관리" onclick="javascript:location.href='manager_repay.dj'">
+	<input type="button" value="대출 관리" onclick="javascript:location.href='manager_borrow.dj'">
 </body>
 </html>

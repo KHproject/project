@@ -1,19 +1,38 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+<<<<<<< HEAD
 
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+=======
+
+	<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+ 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+>>>>>>> branch 'test' of https://github.com/KHproject/project.git
     <meta name="viewport" content="width=device-width, initial-scale=1">
+<<<<<<< HEAD
 <link href="../style/css/herb.css" rel="stylesheet">
 <link href="../bt/css/bootstrap.min.css" rel="stylesheet">
  <link href="../bt/css/bootstrap-theme.min.css" rel="stylesheet">
+=======
+	<link href="style/css/herb.css" rel="stylesheet">
+	<link href="bt/css/bootstrap.min.css" rel="stylesheet">
+ 	<link href="bt/css/bootstrap-theme.min.css" rel="stylesheet">
+>>>>>>> branch 'test' of https://github.com/KHproject/project.git
 <title>main page</title>
+<<<<<<< HEAD
+=======
+
+>>>>>>> branch 'test' of https://github.com/KHproject/project.git
 </head>
 <body>
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> branch 'test' of https://github.com/KHproject/project.git
    <!-- Fixed navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
@@ -65,12 +84,34 @@
       </div>
     </nav>
 
+<<<<<<< HEAD
+=======
+
+
+<h1> DONJOM</h1>
+
+<%-- logo로고  및  top메뉴 --%>
+<img src="logo.jpg"/>
+
+<a href="loan.dj" >DONJOM 받기</a>
+<a href="/product/fund_list.dj" >DONJOM 주기</a>
+<a href="DJlive.dj" >DONJOM 상태</a>
+<a href="/product/DJex.dj" >DONJOM 연습</a>
+<a href="DJcalculator.dj" >DONJOM 계산기</a>
+
+ 
+>>>>>>> branch 'test' of https://github.com/KHproject/project.git
 
 
 <%-- 중간메뉴 --%>
+<<<<<<< HEAD
 <div class="jumbotron">
 	<div id="top_menu">
 	
+=======
+
+
+>>>>>>> branch 'test' of https://github.com/KHproject/project.git
 메인문구
 <ul>
 <li><a href="/profile/dashboard.dj" >대시보드</a></li>
@@ -79,10 +120,14 @@
 <li><a href="press.dj" >언론기사</a></li>
 <li><a href="/guide/loan.dj" >대출안내</a></li>
 <li><a href="/guide/invest.dj" >투자안내</a></li>
+<<<<<<< HEAD
+=======
+
+>>>>>>> branch 'test' of https://github.com/KHproject/project.git
 
 </ul>
 
-<%-- 매출및 부도 상태 --%>
+
 
 <table>
 <tr>
@@ -118,6 +163,7 @@
     </div>
   </div>
 </div>
+
 
 
 
@@ -174,6 +220,10 @@ ${companyinformation}
 
 
 <%-- sns정보 및 사용가능한 sns --%>
+<<<<<<< HEAD
+=======
+
+>>>>>>> branch 'test' of https://github.com/KHproject/project.git
 	</div>
 </div>
 
@@ -184,6 +234,11 @@ ${companyinformation}
     <!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
     <script src="../bt/js/bootstrap.min.js"></script>
       <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<<<<<<< HEAD
     <script src="../bt/js/ie10-viewport-bug-workaround.js"></script>
+=======
+    <script src="bt/js/ie10-viewport-bug-workaround.js"></script>
+
+>>>>>>> branch 'test' of https://github.com/KHproject/project.git
 </body>
 </html>
