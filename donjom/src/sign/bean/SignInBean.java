@@ -49,10 +49,7 @@ public class SignInBean {
 			//settingDto 에 해당 ip를 넣는다.
 			sedto.setIp(ip);
 		}
-	
-		int check = (Integer)sqlMap.queryForObject("signcheck", dto);
 		
-<<<<<<< HEAD
 		DocumentBuilderFactory fatory = DocumentBuilderFactory.newInstance();
 		DocumentBuilder builder = fatory.newDocumentBuilder();
 		
@@ -71,14 +68,21 @@ public class SignInBean {
 		//settingDto 에 나라 코드를 넣는다.
 		sedto.setPlace(country);
 		
-		//email에 해당하는 고유번호 가져오기
+		
 		String email = dto.getEmail();
+		
+		int idcheck = (Integer)sqlMap.queryForObject("idcheck", email);
+		
+		if(idcheck == 1){
+		//email에 해당하는 고유번호 가져오기
 		int no = (Integer)sqlMap.queryForObject("getno", email);
 		sedto.setNo(no);
-=======
-		System.out.println("login = "+check);
->>>>>>> refs/remotes/origin/master
 		
+		
+		int check = (Integer)sqlMap.queryForObject("signcheck", dto);
+		
+		System.out.println("login = "+check);
+
 		if(check == 1){
 			
 			sedto.setMove("로그인(성공)");
@@ -91,6 +95,11 @@ public class SignInBean {
 			
 			sedto.setMove("로그인(실패)");
 			sqlMap.insert("sessioninput", sedto);
+			mv.setViewName("/user/signError.jsp");
+		}
+		
+		}else{
+			
 			mv.setViewName("/user/signError.jsp");
 		}
 	

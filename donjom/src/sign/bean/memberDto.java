@@ -3,37 +3,23 @@ package sign.bean;
 
 public class memberDto {
 	
-<<<<<<< HEAD
-	private String email,pw,nickname,terms,snsreceive,emailreceive,join;
-	private Object profile; 
-	
 
-	public Object getProfile() {
-		return profile;
-	}
+	private String email,pw,nickname,terms,snsreceive,emailreceive,join,profile;
 
-	public void setProfile(Object profile) {
+	public void setProfile(String profile) {
 		this.profile = profile;
 	}
 
+	public String getProfile() {
+		return profile;
+	}
+	
 	public String getJoin() {
 		return join;
 	}
 
 	public void setJoin(String join) {
 		this.join = join;
-=======
-	String email,pw,nickname,terms,profile,snsreceive,emailreceive;
-
-	
-	
-	public String getProfile() {
-		return profile;
-	}
-
-	public void setProfile(String profile) {
-		this.profile = profile;
->>>>>>> refs/remotes/origin/master
 	}
 
 	public String getSnsreceive() {

@@ -8,5 +8,15 @@
 </head>
 <body>
 
+<script>
+
+alert("삭제되었습니다.");
+
+parent.self.close();
+
+parent.window.location.href="main.dj";
+
+</script>
+
 </body>
 </html>

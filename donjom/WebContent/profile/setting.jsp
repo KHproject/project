@@ -6,10 +6,49 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
 <title>Insert title here</title>
+<script>
+
+function checkIt(){
+	
+	if(!document.userinput.nickname.value){	
+		alert("닉네임을 입력해주세요");
+		document.userinput.nickname.focus();
+		return false;
+	}
+	
+	if(!document.userinput.pw.value){
+		alert("현재비밀번호를 입력해주세요");
+		document.userinput.pw.focus();
+		return false;
+	}
+	
+}
+
+function pwcheck(){
+	
+	var f1 = document.userinput;
+	
+	var pw = f1.newpw.value;
+	var pwch = f1.pwch.value;
+	
+	if(pw != pwch){
+		document.getElementById("checkPwd").innerHTML = "<font color=red>비밀번호를 확인해주세요.</font>";	
+	}else{
+		
+		document.getElementById("checkPwd").innerHTML = "<font color=green>비밀번호가 동일합니다.</font>";
+	}
+	
+}
+
+function open_win_noresizable (url, name) {
+	var oWin = window.open(url, name, "scrollbars=no,status=no,resizable=no,width=300,height=150");
+}
+
+</script>
 </head>
 <body>
 
-<<<<<<< HEAD
+
 ${dto.profile}		<br/>
 ${dto.nickname}		<br/>
 ${dto.email}		<br/>
@@ -38,25 +77,27 @@ ${dto.email}		<br/>
 
 <h2>회원정보</h2>
 
-<form action="signup_modifyPro.dj" method="post" enctype="multipart/form-data">
+<form action="signup_modifyPro.dj" method="post" enctype="multipart/form-data" name="userinput">
 닉네임 <input type="text" name="nickname" value="${dto.nickname}">		<br/>
 이메일 ${dto.email}								<br/>
 가입일 ${dto.join}									<br/>
 <c:if test="${dto.profile == null}">			
-프로필사진수정 <input type="file" name="profile">		<br/>
+프로필사진수정 <input type="file" name="save">		<br/>
 </c:if>
 <c:if test="${dto.profile != null}">	
 <input type="hidden" value="${dto.profile}" name="profile">	
 <img src="/save/${dto.profile}">				<br/>
-</c:if>
+</c:if> 
 추천인이메일 <input type="text" name="goodemail">	<br/>
 
 비밀번호변경 										<br/>
-새비밀번호 <input type="text" name="newpw">			<br/>
-새비밀번호 확인 <input type="text" name="pwch">		<br/>
-현재비밀번호 <input type="text" name="pw">			<br/>
-※보안을 위해 정보수정시 현재 비밀번호를 입력해주세요.				<br/>
-<input type="submit" value="수정">				<br/><br/>
+새비밀번호 <input type="password" name="newpw">			<br/>
+새비밀번호 확인 <input type="password" name="pwch" onkeyup="pwcheck()">	<br/>
+<div id="checkPwd">비밀번호를 확인해주세요</div>
+현재비밀번호 <input type="password" name="pw">			<br/>
+※보안을 위해 정보수정시 현재 비밀번호를 입력해주세요.			<br/>
+
+<input type="submit" value="수정" onclick="return checkIt()">				<br/><br/>
 </form>
 
 알림설정
@@ -77,39 +118,8 @@ EMAILL 수신동의<input type="checkbox" name="emailreceive">		<br/><br/>
 <input type="submit" value="확인">
 </form>
 
-* DJ서비스를 더이상 원하지 않을 경우 
-<input type="button" value="회원탈퇴" onclick="">
-=======
-<h2>회원정보</h2>
-
-<form action="signup_modifyPro.dj" method="post" enctype="multipart/form-data">
-닉네임 <input type="text" name="nickname">			<br/>
-이메일 ${dto.email}								<br/>
-가입일 ${dto.join}									<br/>
-<c:if test="${dto.profile == null}">			
-프로필사진수정 <input type="file" name="save">		<br/>
-</c:if>
-<c:if test="${dto.profile != null}">		
-<img src="/save/${dto.profile}">				<br/>
-</c:if>
-추천인이메일 <input type="text" name="nickname">		<br/>
-
-비밀번호변경 										<br/>
-새비밀번호 <input type="text" name="newpw">			<br/>
-새비밀번호 확인 <input type="text" name="pwch">		<br/>
-현재비밀번호 <input type="text" name="pw">			<br/>
-※보안을 위해 정보수정시 현재 비밀번호를 입력해주세요.				<br/>
-<input type="submit" value="수정">				<br/><br/>
-</form>
-
-알림설정
-<form action="signup_modifyPro.dj" method="post">
-SNS 수신동의<input type="checkbox" name="snsreceive" >			<br/>
-EMAILL 수신동의<input type="checkbox" name="emailreceive">		<br/>
-<input type="submit" value="확인">
-</form>
->>>>>>> refs/remotes/origin/master
-
+* DJ서비스를 더이상 원하지 않을 경우
+<input type="button" value="삭제" onClick="javascript:open_win_noresizable('signup_checkPw.dj?email=${dto.email}')">
 
 </body>
 </html>
