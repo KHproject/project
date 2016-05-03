@@ -25,26 +25,32 @@ public class ManagerBean {
 		return mv;
 	}
 	@RequestMapping("/manager_member.dj")
-	public ModelAndView managermember(){
-		List list1 = new ArrayList();
-		List list2 =new ArrayList();
-		ModelAndView mv = new ModelAndView();
-		
-		list1 = sqlMap.queryForList("m_member", null);
-		list2 = sqlMap.queryForList("m_memberInfo", null);
-		mv.addObject("list1",list1);
-		mv.addObject("list2",list2);
-		
-		mv.setViewName("/manager/manager_member.jsp");
-		return mv;
+	public String managermember(){
+	
+		return "/manager/manager_member.jsp";
 	}
 	
 	@RequestMapping("/manager_confirm.dj")
 	public ModelAndView managerconfirm(){
 		
+		List list= new ArrayList();
+		list = sqlMap.queryForList("m_member", null);
+		mv.addObject("list",list);
 		mv.setViewName("/manager/manager_confirm.jsp");
+		
 		return mv;
 	}
+	@RequestMapping("/manager_noconfirm.dj")
+	public ModelAndView managernoconfirm(){
+		
+		List list= new ArrayList();
+		list = sqlMap.queryForList("m_memberInfo", null);
+		mv.addObject("list",list);
+		mv.setViewName("/manager/manager_noconfirm.jsp");
+		
+		return mv;
+	}
+	
 	@RequestMapping("/manager_page.dj")
 	public ModelAndView managercategory(){
 		
