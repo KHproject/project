@@ -9,9 +9,7 @@
 <body>
 
 <script>
-
-	window.loaction.href="signIn.dj"
-
+	window.location.href="signIn.dj"
 </script>
 
 </body>
