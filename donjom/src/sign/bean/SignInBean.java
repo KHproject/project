@@ -20,7 +20,7 @@ public class SignInBean {
 	@RequestMapping("/signIn.dj")
 	public ModelAndView signIn(){
 		
-
+		System.out.println("·Î±×ÀÎ");
 		mv.setViewName("/user/signIn.jsp");
 		return mv;
 	}
@@ -29,6 +29,8 @@ public class SignInBean {
 	public ModelAndView signPro(memberDto dto,HttpSession session){
 		
 		int check = (Integer)sqlMap.queryForObject("signcheck", dto);
+		
+		System.out.println("login = "+check);
 		
 		if(check == 1){
 			session.setAttribute("memId", dto.getEmail());
